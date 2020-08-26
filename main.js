@@ -7,7 +7,8 @@ if (!('remove' in Element.prototype)) {
   };
 }
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiYW5uYS1wIiwiYSI6ImNqb2V1Y29vYjIxMm0zcGxlZ2EyOGR6bzYifQ.dxEq0anALJ7E_Z7RoHH5XQ';
+mapboxgl.accessToken = 'pk.eyJ1IjoiamFja2I1NDMyMSIsImEiOiJja2VhcWFjbnIwMWFvMnFwOGd0MHNlenJlIn0.SFN0yMW5-RWQfk4T-DYBYQ
+';
 
 // This adds the map to the page
 var map = new mapboxgl.Map({
