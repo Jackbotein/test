@@ -827,7 +827,7 @@ Calendly._util.assign = function assign(target, varArgs) { // .length of functio
     BadgeWidget.prototype.buildBranding = function() {
       var element;
       element = document.createElement('span');
-      element.innerHTML = 'The EVO, Boston';
+      element.innerHTML = '';
       return element;
     };
 
