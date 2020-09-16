@@ -1,10 +1,16 @@
-<!DOCTYPE html>
 <html>
-<body>
-
-<h1>HTML Links</h1>
-
-<p><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p>
-
-</body>
+  <div id="app">
+  <!-- our main component -->
+  <ksvuefp :options="options" :sections="sections">
+    <!-- our section component -->
+    <ksvuefp-section v-for="(section,index) in sections" :section="section" :key="section.bgColor" :section-index="index" :background-color="section.bgColor">
+      <!-- Use Vue-ish way for content animations and transitions. Using !$ksvuefp.slidingActive in v-show will result in content waiting for transitions between sections to finish before animating in -->
+      <transition name="fade">
+        <h2 v-show="$ksvuefp.canAnimContent(index, true)"> 
+          {{ section.content }}
+        </h2>
+      </transition>    
+    </ksvuefp-section>
+  </ksvuefp>
+</div>
 </html>
